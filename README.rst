@@ -16,14 +16,14 @@ Your project description goes here
 Documentation
 -------------
 
-The full documentation is at https://fh-tags.readthedocs.io.
+The full documentation is at https://github.com/frankhood/django-templatetag-toolkit/tree/main/docs
 
 Quickstart
 ----------
 
 Install FH Tags::
 
-    pip install fh-tags
+    pip install django-templatetag-toolkit
 
 Add it to your `INSTALLED_APPS`:
 
@@ -31,27 +31,23 @@ Add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'fh_tags.apps.FhTagsConfig',
+        'django-templatetag-toolkit',
         ...
     )
 
-Add FH Tags's URL patterns:
-
-.. code-block:: python
-
-    from fh_tags import urls as fh_tags_urls
-
-
-    urlpatterns = [
-        ...
-        url(r'^', include(fh_tags_urls)),
-        ...
-    ]
 
 Features
 --------
 
-* TODO
+* annotate_form_field
+* BuildAbsoluteUri
+* GenericEntryListWidget
+* GetListWidget
+* GetDictWidget
+* RemoveBreak
+* easy_tag
+* append_to_get
+* change_language
 
 Running Tests
 -------------

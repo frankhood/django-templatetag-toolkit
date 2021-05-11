@@ -23,28 +23,6 @@ logger = logging.getLogger('django-templatetag-toolkit')
 
 register = template.Library()
 
-'''
-def do_include_raw(parser, token):
-    """
-    Performs a template include without parsing the context, just dumps the template in.
-    @author : http://djangosnippets.org/snippets/1684/
-    """
-    bits = token.split_contents()
-    if len(bits) != 2:
-        raise TemplateSyntaxError, "%r tag takes one argument: the name of the template to be included" % bits[0]
-
-    template_name = bits[1]
-    if template_name[0] in ('"', "'") and template_name[-1] == template_name[0]:
-        template_name = template_name[1:-1]
-
-    source, path = load_template_source(template_name)
-
-    return template.TextNode(source)
-
-register.tag("include_raw", do_include_raw)
-
-'''
-
 
 @register.tag
 def annotate_form_field(parser, token):
@@ -83,6 +61,7 @@ def annotate_form_field(parser, token):
     return FormFieldNode(args[1])
 
 
+@register.tag('build_absolute_uri')
 class BuildAbsoluteUri(TemplateTag):
     name = 'build_absolute_uri'
 
@@ -98,8 +77,7 @@ class BuildAbsoluteUri(TemplateTag):
             context[as_var] = absolute_uri
         return absolute_uri
 
-
-register.tag(BuildAbsoluteUri)
+# register.tag(BuildAbsoluteUri)
 
 
 class GenericEntryListWidget(TemplateTag):
