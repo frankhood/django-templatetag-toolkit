@@ -11,7 +11,7 @@ FH Tags
 .. image:: https://codecov.io/gh/frankhood/fh-tags/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/frankhood/fh-tags
 
-Your project description goes here
+
 
 Documentation
 -------------
