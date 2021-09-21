@@ -288,7 +288,7 @@ def append_to_get(_tag_name, dict):
 
             if len(get):
                 path += "?%s" % "&".join(
-                    ["%s=%s" % (key, value) for (key, value) in get.items() if (value is not "" and value is not None)])
+                    ["%s=%s" % (key, value) for (key, value) in get.items() if (value != "" and value is not None)])
             return path
 
     return AppendGetNode(dict)
