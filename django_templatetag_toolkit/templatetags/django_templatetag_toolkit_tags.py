@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-""" django-templatetag-toolkit.templatetags.fh_tags.py by Frankhood
+""" django-templatetag-toolkit.templatetags.django_templatetag_toolkit.py by Frankhood
     @author: Frankhood Business Solutions
 """
 from __future__ import absolute_import, unicode_literals

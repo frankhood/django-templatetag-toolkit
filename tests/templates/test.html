@@ -1,0 +1,14 @@
+{% load static from staticfiles %}
+{% load django_templatetag_toolkit_filters %}
+{% load django_templatetag_toolkit_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+    {{ '{"jsonify":5}'|jsonify }}<br/>
+    {{ '{"no jsonify":5}' }}
+</body>
+</html>

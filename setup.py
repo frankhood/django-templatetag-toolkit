@@ -11,7 +11,7 @@ except ImportError:
 
 
 def get_version(*file_paths):
-    """Retrieves the version from fh_tags/__init__.py"""
+    """Retrieves the version from django_templatetag_toolkit/__init__.py"""
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
     version_file = open(filename).read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
@@ -21,7 +21,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-version = get_version("fh_tags", "__init__.py")
+version = get_version("django_templatetag_toolkit", "__init__.py")
 
 
 if sys.argv[-1] == 'publish':
@@ -46,21 +46,21 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 requirements = open('requirements.txt').readlines()
 
 setup(
-    name='fh-tags',
+    name='django-templatetag-toolkit',
     version=version,
     description="""Your project description goes here""",
     long_description=readme + '\n\n' + history,
     author='Frankhood Business Solutions',
     author_email='info@frankhood.it',
-    url='https://github.com/frankhood/fh-tags',
+    url='https://github.com/frankhood/django-templatetag-toolkit',
     packages=[
-        'fh_tags',
+        'django_templatetag_toolkit',
     ],
     include_package_data=True,
     install_requires=requirements,
     license="MIT",
     zip_safe=False,
-    keywords='fh-tags',
+    keywords='django-templatetag-toolkit',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Framework :: Django :: 2.1',
