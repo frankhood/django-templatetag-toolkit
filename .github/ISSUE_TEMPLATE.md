@@ -1,4 +1,4 @@
-* FH Tags version:
+* Django Templatetag Toolkit version:
 * Django version:
 * Python version:
 * Operating System:

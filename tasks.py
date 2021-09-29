@@ -37,7 +37,7 @@ def coverage(c):
     """
     check code coverage quickly with the default Python
     """
-    c.run("coverage run --source fh-tags runtests.py tests")
+    c.run("coverage run --source django-templatetag-toolkit runtests.py tests")
     c.run("coverage report -m")
     c.run("coverage html")
     c.run("open htmlcov/index.html")
@@ -48,9 +48,9 @@ def docs(c):
     """
     Build the documentation and open it in the browser
     """
-    c.run("rm -f docs/fh-tags.rst")
+    c.run("rm -f docs/django-templatetag-toolkit.rst")
     c.run("rm -f docs/modules.rst")
-    c.run("sphinx-apidoc -o docs/ fh_tags")
+    c.run("sphinx-apidoc -o docs/templatetag_toolkit")
 
     c.run("sphinx-build -E -b html docs docs/_build")
     open_browser(path='docs/_build/html/index.html')
@@ -86,7 +86,7 @@ def lint(c):
     """
     Check style with flake8
     """
-    c.run("flake8 fh-tags tests")
+    c.run("flake8 django-templatetag-toolkit tests")
 
 
 @task(help={'bumpsize': 'Bump either for a "feature" or "breaking" change'})
@@ -100,10 +100,10 @@ def release(c, bumpsize=''):
 
     c.run("bumpversion {bump} --no-input".format(bump=bumpsize))
 
-    import fh_tags
+    import templatetag_toolkit
     c.run("python setup.py sdist bdist_wheel")
     c.run("twine upload dist/*")
 
-    c.run('git tag -a {version} -m "New version: {version}"'.format(version=fh_tags.__version__))
+    c.run('git tag -a {version} -m "New version: {version}"'.format(version=templatetag_toolkit.__version__))
     c.run("git push --tags")
     c.run("git push origin master")

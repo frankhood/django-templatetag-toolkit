@@ -1,15 +1,15 @@
 =============================
-FH Tags
+Django Templatetag Toolkit
 =============================
 
-.. image:: https://badge.fury.io/py/fh-tags.svg
-    :target: https://badge.fury.io/py/fh-tags
+.. image:: https://badge.fury.io/py/templatetag_toolkit.svg
+    :target: https://badge.fury.io/py/django-templatetag-toolkit
 
-.. image:: https://travis-ci.org/frankhood/fh-tags.svg?branch=master
-    :target: https://travis-ci.org/frankhood/fh-tags
+.. image:: https://travis-ci.org/frankhood/templatetag_toolkit.svg?branch=master
+    :target: https://travis-ci.org/frankhood/django-templatetag-toolkit
 
-.. image:: https://codecov.io/gh/frankhood/fh-tags/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/frankhood/fh-tags
+.. image:: https://codecov.io/gh/frankhood/templatetag_toolkit/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/frankhood/django-templatetag-toolkit
 
 
 
@@ -21,7 +21,7 @@ The full documentation is at https://github.com/frankhood/django-templatetag-too
 Quickstart
 ----------
 
-Install FH Tags::
+Install Django Templatetag Toolkit::
 
     pip install django-templatetag-toolkit
 
@@ -31,7 +31,7 @@ Add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'django-templatetag-toolkit',
+        'templatetag_toolkit',
         ...
     )
 

@@ -1,0 +1,14 @@
+{% load static %}
+{% load toolkit_filters %}
+{% load toolkit_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+    {{ '{"jsonify":5}'|jsonify }}<br/>
+    {{ '{"no jsonify":5}' }}
+</body>
+</html>
