@@ -8,7 +8,7 @@ To use Django Templatetag Toolkit in a project, add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'django_templatetag_toolkit',
+        'templatetag_toolkit',
         ...
     )
 

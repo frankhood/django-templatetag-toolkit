@@ -3,3 +3,5 @@ twine
 wheel
 zest.releaser
 
+django>=2.2
+django-classy-tags

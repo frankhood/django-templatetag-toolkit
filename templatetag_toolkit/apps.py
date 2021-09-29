@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 
 class DjangoTemplatetagToolkitConfig(AppConfig):
-    name = 'django_templatetag_toolkit'
+    name = 'templatetag_toolkit'

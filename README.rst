@@ -2,13 +2,13 @@
 Django Templatetag Toolkit
 =============================
 
-.. image:: https://badge.fury.io/py/django_templatetag_toolkit.svg
+.. image:: https://badge.fury.io/py/templatetag_toolkit.svg
     :target: https://badge.fury.io/py/django-templatetag-toolkit
 
-.. image:: https://travis-ci.org/frankhood/django_templatetag_toolkit.svg?branch=master
+.. image:: https://travis-ci.org/frankhood/templatetag_toolkit.svg?branch=master
     :target: https://travis-ci.org/frankhood/django-templatetag-toolkit
 
-.. image:: https://codecov.io/gh/frankhood/django_templatetag_toolkit/branch/master/graph/badge.svg
+.. image:: https://codecov.io/gh/frankhood/templatetag_toolkit/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/frankhood/django-templatetag-toolkit
 
 
@@ -31,7 +31,7 @@ Add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'django-templatetag-toolkit',
+        'templatetag_toolkit',
         ...
     )
 
